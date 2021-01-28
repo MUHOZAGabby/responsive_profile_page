@@ -28,6 +28,10 @@ html {
 .profile-section {
 	margin: 40px 0;
 }
+.profile{
+	background-color: #f7f7f7;
+	padding: 10px;
+}
 footer {
 	background: #d6d5d5;
 	height: 40px
