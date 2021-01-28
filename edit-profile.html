@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>profile</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="home.php">Chat Logo</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item pr-10">
+                    <a class="nav-link active" aria-current="page" href="home.php">Home</a>
+                  </li>
+                  <li class="nav-item pr-5 dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Member
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="edit-profile.php">Register</a></li>
+                      <li><a class="dropdown-item" href="logout.php">Logout</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item pr-5">
+                    <a class="nav-link" href="notifications.php">Notifications <span class="badge bg-secondary">4</span></a>
+                  </li>
+                  <li class="nav-item pr-5">
+                    <a class="nav-link" href="Chat.php">Chat</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <section class="profile-banner">
+      <h1 class="display-4">Profile</h1>
+    </section>
+
+    <!-- Profile section -->
+    <section class="profile-section">
+      <div class="container"> 
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-4">
+              <div class="card">
+                <div class="card-header">
+                  Personal details
+                </div>
+                <div class="card-body">
+                  
+                  <h5 class="card-title">username</h5>
+                  <p class="card-text">firstname</p>
+                  <p class="card-text">lastname</p>
+                  <p class="card-text">country</p>
+                  <p class="card-text">city</p>
+                  <p class="card-text">email</p>
+              
+                  <div class="d-grid gap-2">
+                   <a href="index.php?idd=<?= $row->id ?>" class="btn btn-primary">Delete Account</a>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-8">
+            <div class="card-header">
+                  Manage your Account
+                </div>
+            <div class="col-12 col-sm-12 profile">
+              <form action="" method="POST" >
+                <div class="mb-3">
+                  <label class="form-label">User Name</label>
+                  <input type="text" class="form-control" name="username">
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Fist Name</label>
+                  <input type="text" class="form-control" name="firstname">
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Last Name</label>
+                  <input type="text" class="form-control" name="lastname">
+                </div>
+                <div class="mb-3">
+                  <div class="mb-3">
+                  <label class="form-label">Country</label>
+                  <input type="text" class="form-control" name="country">
+                </div>
+                  <label class="form-label">City</label>
+                  <input type="text" class="form-control" name="city">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" name="email">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control"  name="password">
+                </div>
+                <div class="d-grid gap-2">
+                  <input type="submit" class="btn btn-primary" value="Update My Account" name="update">
+                </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer section -->
+        <footer>
+          <p class="copyright">Company Name © 2021</p>
+        </footer>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

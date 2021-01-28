@@ -1,0 +1,38 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	scroll-behavior: smooth;
+	box-sizing: border-box;
+}
+.navbar-brand {
+	padding: 10px 20px;
+}
+.nav-item {
+	padding: 10px 20px;
+}
+.profile-banner {
+	height: 32em;
+	background: linear-gradient(rgb(51, 51, 51, 0.9), rgb(51, 51, 51, 0.9)), url(../img/bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	text-align: center;
+}
+.profile-banner h1 {
+	color: #fff;
+	padding: 150px 0; 
+}
+.profile-section {
+	margin: 40px 0;
+}
+footer {
+	background: #d6d5d5;
+	height: 40px
+}
+footer p {
+	padding-top: 10px;
+	text-align: center;
+}
